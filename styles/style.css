@@ -1,0 +1,302 @@
+@font-face {
+    font-family: orator-std;
+    src: url(OratorStd.otf);
+}
+
+@font-face {
+    font-family: futura;
+    src: url(Futura.ttx);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: futura-light;
+    src: url(FuturaLight.ttf);
+    font-weight: bold;
+}
+* {
+ box-sizing: border-box;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+body {
+font-family: 'orator-std', monospace;
+font-style: normal;
+font-weight: 400;
+}
+
+main {
+ overflow: hidden;
+ display: block;
+ position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-size: 1.5vw;
+}
+
+h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.hilight {
+  background-color: #F7ECAD;
+}
+/* nav */
+
+header {
+  height: 6vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+header nav{
+  position: absolute;
+  bottom: .5vw;
+  padding:1.75vw;
+  display: block;
+}
+
+header nav ul {
+    display:inline;
+    padding-top: 1vw;
+    margin-right:20px;
+    font-weight:300;
+}
+
+header nav ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header a{
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+/* hero */
+
+.hero-content {
+  height: 45vw;
+  position: relative;
+  background: url(../images/hero_background2.svg);
+  background-size: cover;
+
+}
+
+
+.hero-content h1 {
+  text-align: left;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  display: inline;
+  font-size: 8vw;
+}
+
+.hero-content h2 {
+  font-family: 'futura-light', sans-serif;
+  position: absolute;
+  text-align: right;
+  top: 40%;
+  right: 5%;
+  display: inline;
+  font-size: 3.5vw;
+}
+
+/* work  & skills */
+
+.work {
+  background: white;
+  position: relative;
+}
+
+.title {
+  width: 100%;
+  justify-content: center;
+  height: 10vw;
+}
+.title h2 {
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-top: 2vw;
+  font-size: 3.5vw;
+  color: #4A4A4A;
+}
+
+.work-content {
+
+overflow: hidden;
+}
+
+.work-content div {
+
+  width: 100%;
+}
+
+.first-row,
+.second-row {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.project {
+  background: #4B4B4B;
+  height: 35vw;
+  width: 45vw;
+ margin: 1%;
+}
+
+.button {
+  position: relative;
+  height: 20vw;
+ margin: 3vw 0;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+
+.button h1 {
+  height: 3vw;
+  position: relative;
+}
+
+.button img {
+  display: block;
+  width: 3vw;
+
+}
+
+.button h2 {
+  display: inline;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2vw;
+  font-family: 'futura-light', sans-serif;
+  border: 1px solid black;
+  border-radius: 4vw;
+  padding: 1.25vw 2vw;
+}
+
+.skills {
+  padding: 1vw 1vw 8vw 1vw;
+  background: #FBF5D6;
+}
+
+.skill {
+  color: #4A4A4A;
+  padding: 1vw;
+}
+
+.skill h3 {
+  text-align: center;
+}
+
+.skill p {
+  text-align: left;
+  font-family: 'FuturaLight', sans-serif;
+  font-size: 14px;
+
+}
+
+.skill img {
+  width: 18%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thanks {
+  height: 38vw;
+  position: relative;
+  padding: 4vw 0;
+  background: url(../images/background_pink.svg);
+  background-size: cover;
+}
+
+.thanks p {
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 4vw;
+  font-size: 2.5vw;
+  display: inline;
+  transform: translate(40.75vw , 14vw) rotate(-13deg);
+}
+
+.thanks img {
+  width: 28vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* footer */
+
+footer {
+  position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  background: #F7ECAD;
+}
+
+footer div {
+  padding: 2vw;
+  width: 30%;
+}
+
+.footer-logo {
+  float: left;
+}
+
+.footer-logo img {
+  height: 6vw;
+}
+
+.footer-text {
+  text-align: center;
+  float: inherit;
+  margin: auto;
+  width: auto;
+  font-size: 2vw;
+  color: #4A4A4A;
+}
+
+.footer-contact {
+  float: right;
+}
+
+.footer-contact a {
+  display: block;
+  width: 100%;
+  text-align: right;
+  color: black;
+}
+
+
+.footer-contact img {
+  display: block;
+  margin-left: auto;
+  height: 3vw;
+  padding-bottom: 1vw;
+}
