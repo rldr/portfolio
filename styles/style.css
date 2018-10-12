@@ -14,25 +14,29 @@
     src: url(FuturaLight.ttf);
     font-weight: bold;
 }
-* {
- box-sizing: border-box;
-}
 
+*,
 *:before,
 *:after {
- box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
  height: 100%;
  position: relative;
+ overflow-x: hidden;
 }
 
 body {
 font-family: 'orator-std', monospace;
 font-style: normal;
 font-weight: 400;
+margin: 0;
+font-size: 16px;
 }
 
 main {
@@ -44,7 +48,7 @@ main {
 a {
   text-decoration: none;
   color: #4A4A4A;
-  font-size: 1.5vw;
+  font-size: 1.25em;
 }
 
 h1 {
@@ -104,20 +108,46 @@ header a{
 .hero-content h1 {
   text-align: left;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 5%;
   display: inline;
   font-size: 8vw;
+  z-index: 1;
 }
 
 .hero-content h2 {
   font-family: 'futura-light', sans-serif;
   position: absolute;
   text-align: right;
-  top: 40%;
-  right: 5%;
+  top: 45%;
+  right: 15%;
   display: inline;
   font-size: 3.5vw;
+}
+
+.change-text:before {
+  content:"UX // Los Angeles";
+}
+
+.change-text:hover:before {
+  content:"Nice to meet you";
+}
+
+h1 span {
+  position: absolute;
+
+}
+
+h1 span:hover:before {
+  content: "";
+  width: 99%;
+  height: 4vw;
+  display: block;
+  background: #F7ECAD;
+  position: absolute;
+  top: 2vw;
+  left: .5vw;
+  z-index: -1;
 }
 
 /* work  & skills */
@@ -135,7 +165,7 @@ header a{
 .title h2 {
   letter-spacing: 1.5px;
   text-align: center;
-  padding-top: 2vw;
+  padding-top: 3vw;
   font-size: 3.5vw;
   color: #4A4A4A;
 }
@@ -166,6 +196,7 @@ overflow: hidden;
 
 .button {
   position: relative;
+  padding-top: 2%;
   height: 20vw;
  margin: 3vw 0;
  display: flex;
@@ -181,18 +212,18 @@ overflow: hidden;
 .button img {
   display: block;
   width: 3vw;
-
+padding: 2em 0;
 }
 
-.button h2 {
+.button a {
   display: inline;
   margin-right: auto;
   margin-left: auto;
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-family: 'futura-light', sans-serif;
   border: 1px solid black;
   border-radius: 4vw;
-  padding: 1.25vw 2vw;
+  padding: 1.25vw 6vw;
 }
 
 .skills {
@@ -221,6 +252,7 @@ overflow: hidden;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 1em 0;
 }
 
 .thanks {
@@ -238,7 +270,7 @@ overflow: hidden;
   top: 4vw;
   font-size: 2.5vw;
   display: inline;
-  transform: translate(40.75vw , 14vw) rotate(-13deg);
+  transform: translate(40.75vw , 16vw) rotate(-13deg);
 }
 
 .thanks img {
@@ -280,6 +312,8 @@ footer div {
   width: auto;
   font-size: 2vw;
   color: #4A4A4A;
+  font-family: 'futura-light', sans-serif;
+  font-size: 1.5rem;
 }
 
 .footer-contact {
