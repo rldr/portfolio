@@ -58,11 +58,18 @@ main.case section ul {
 
 @media only screen and (min-width: 641px){
   .banner img { height: 30vw; }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+  }
   .user-personas .column:nth-child(2) {
     flex-direction: row;
     justify-content: center;
@@ -81,7 +88,55 @@ main.case section ul {
 
   .user-personas .column:nth-child(2) { flex-direction: row; }
 
-  .user-personas .column:nth-child(2) img { width: 33%; }
-
   .user-stories .grid { grid-template-columns: 1fr 2fr; }
+
+  .grid2 { grid-template-columns: 1fr 1fr 1fr; }
+
+  .a {
+  grid-row: row;
+  grid-column: col / span 3;
+}
+
+.b {
+  grid-row: row 2;
+  grid-column: col;
+}
+
+.c {
+  grid-row: row 2;
+  grid-column: col 2 / span 2;
+}
+
+.d {
+  grid-row: row 3;
+  grid-column: col / span 3;
+}
+
+.e {
+  grid-row: row 4;
+  grid-column: col / span 2;
+}
+
+.f {
+  grid-row: row 4;
+  grid-column: col 3;
+}
+
+.g {
+  grid-row: row 5;
+  grid-column: col / span 3;
+
+}
+
+.h {
+  grid-row: row 6;
+  grid-column: col;
+
+}
+
+.j {
+  grid-row: row 6;
+  grid-column: col 2 / span 2;
+}
+
 }
