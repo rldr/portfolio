@@ -1,0 +1,87 @@
+/*  cravery case study */
+
+.banner {
+  height: 100%;
+}
+
+.banner img {
+  height: 40vw;
+  display: block;
+  margin: auto;
+  width: 100vw;
+}
+
+.grey {
+  background: #F5F8FA;
+}
+
+main.case section {
+  padding: 20px;
+}
+
+main.case section p {
+  padding: 20px 10px;
+}
+
+main.case section h2 {
+  font-size: 30px;
+}
+.column {
+ padding: 10px;
+ width: 100%;
+}
+
+.column img {
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+main.case section ul {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.user-personas .column:nth-child(2),
+.flows-sitemap .column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-personas .column:nth-child(2) img {
+  margin: 0;
+  height: 100%;
+  width: 350px;
+}
+
+
+@media only screen and (min-width: 641px){
+  .banner img { height: 30vw; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .user-personas .column:nth-child(2) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .user-personas .column:nth-child(2) img { width: 33%; }
+
+}
+
+@media only screen and (min-width: 1025px){
+  main.case section {
+    width: 1000px;
+    margin: auto;
+  }
+  .grid { grid-template-columns: 2fr 1fr; }
+
+  .user-personas .column:nth-child(2) { flex-direction: row; }
+
+  .user-personas .column:nth-child(2) img { width: 33%; }
+
+  .user-stories .grid { grid-template-columns: 1fr 2fr; }
+}

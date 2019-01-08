@@ -1,0 +1,142 @@
+/*  cravery case study */
+
+.banner {
+  height: 100%;
+}
+
+.banner img {
+  height: 40vw;
+  display: block;
+  margin: auto;
+  width: 100vw;
+}
+
+.grey {
+  background: #F5F8FA;
+}
+
+main.case section {
+  padding: 20px;
+}
+
+main.case section p {
+  padding: 20px 10px;
+}
+
+main.case section h2 {
+  font-size: 30px;
+}
+.column {
+ padding: 10px;
+ width: 100%;
+}
+
+.column img {
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+main.case section ul {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.user-personas .column:nth-child(2),
+.flows-sitemap .column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-personas .column:nth-child(2) img {
+  margin: 0;
+  height: 100%;
+  width: 350px;
+}
+
+
+@media only screen and (min-width: 641px){
+  .banner img { height: 30vw; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+  }
+  .user-personas .column:nth-child(2) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .user-personas .column:nth-child(2) img { width: 33%; }
+
+}
+
+@media only screen and (min-width: 1025px){
+  main.case section {
+    width: 1000px;
+    margin: auto;
+  }
+  .grid { grid-template-columns: 2fr 1fr; }
+
+  .user-personas .column:nth-child(2) { flex-direction: row; }
+
+  .user-stories .grid { grid-template-columns: 1fr 2fr; }
+
+  .grid2 { grid-template-columns: 1fr 1fr 1fr; }
+
+  .a {
+  grid-row: row;
+  grid-column: col / span 3;
+}
+
+.b {
+  grid-row: row 2;
+  grid-column: col;
+}
+
+.c {
+  grid-row: row 2;
+  grid-column: col 2 / span 2;
+}
+
+.d {
+  grid-row: row 3;
+  grid-column: col / span 3;
+}
+
+.e {
+  grid-row: row 4;
+  grid-column: col / span 2;
+}
+
+.f {
+  grid-row: row 4;
+  grid-column: col 3;
+}
+
+.g {
+  grid-row: row 5;
+  grid-column: col / span 3;
+
+}
+
+.h {
+  grid-row: row 6;
+  grid-column: col;
+
+}
+
+.j {
+  grid-row: row 6;
+  grid-column: col 2 / span 2;
+}
+
+}

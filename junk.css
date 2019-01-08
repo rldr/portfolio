@@ -92,7 +92,7 @@ h3 {
  p {
   text-align: left;
   font-family: 'FuturaLight', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -543,6 +543,175 @@ main.case ul > li {
   position: absolute;
   top: 2vw;
   left: 2.5vw;
+}
+
+/* case study */
+
+.bar {
+  height: 4vw;
+  background: #FFF5F4;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.bar h3 {
+  opacity: .5;
+  position: absolute;
+  bottom: 1vw;
+  margin: auto;
+  display: block;
+}
+
+.case-nav {
+  background: #F1FBFE;
+  height: 4vw;
+}
+
+.case-banner {
+ display: block;
+ height: 15rem;
+ position: relative;
+ background: grey;
+ background-size: cover;
+}
+
+.overview h1 {
+  margin-top: 92px;
+    margin-bottom: 80px;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 2.8px;
+}
+
+.overview h2 {
+  font-family: 'futara-light', sans-serif;
+  margin-bottom: 80px;
+    font-size: 1.25rem;
+    line-height: 40px;
+    letter-spacing: 1.3px;
+}
+
+main.case h2 {
+  padding: 2rem 0;
+}
+
+main.case section {
+  padding: 2rem 0;
+}
+
+main.case p,
+.overview h2,
+main.case ul,
+.text-container p {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main.case p,
+main.case ul {
+  padding-bottom: 2rem;
+  line-height: 1.6rem;
+  font-size: 14px;
+
+}
+
+main.case section.grey,
+.case-nav ul > li:hover {
+  background: #F5F8FA;
+}
+
+main.case ul {
+  padding-top: 0;
+}
+
+
+.user-personas div,
+.user-stories div {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+}
+
+.user-personas img {
+  width: 33%;
+  height: 100%;
+  padding: 0 5px 3rem 5px;
+}
+
+.user-stories div img {
+  padding-bottom: 3rem;
+}
+
+.user-personas p,
+.user-stories p,
+.branding p {
+  text-align: center;
+}
+
+.split {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3rem;
+
+}
+
+main.case .split div {
+  display: inline;
+  width: 50%;
+  margin: 0;
+}
+
+main.case .split div img,
+.flex-col img {
+  margin: auto;
+  display: block;
+
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-section,
+.image-section {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.competitive-analysis .image-section img {
+  width: 30%;
+}
+
+hr {
+  margin: auto;
+  width: 75%;
+  height: 1px;
+  background-color: #fff;
+	border-top: 2px dashed #8c8b8b;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-top: .5rem;
+}
+
+section.branding2 h2 {
+  padding-bottom: 0;
+  position: relative;
+
 }
 
 
